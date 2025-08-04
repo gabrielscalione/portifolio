@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static', filename='image/logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+	
+	<title>Relatório de Atividades</title>
+ 
+</head>
+<body>
+    <h1>Relatório de Atividades</h1>
+
+    <form id="atividade-form">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div class="form-group">
+                <label for="hora-inicial">Hora Inicial:</label>
+                <input type="time" id="hora-inicial" name="hora-inicial" required>
+            </div>
+            <div class="form-group">
+                <label for="hora-final">Hora Final:</label>
+                <input type="time" id="hora-final" name="hora-final" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="tipo-atividade">Tipo de Atividade:</label>
+                <input type="text" id="tipo-atividade" name="tipo-atividade" required>
+            </div>
+            <div class="form-group">
+                <label for="solicitante">Solicitante:</label>
+                <input type="text" id="solicitante" name="solicitante" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group descricao">
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" rows="4" cols="50" required></textarea>
+            </div>
+        </div>
+        <button type="submit">Adicionar Atividade</button>
+    </form>
+    
+    <h2>Lista de Atividades</h2>
+
+    <table id="atividades-table">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Hora Inicial</th>
+                <th>Hora Final</th>
+                <th>Horas Gastas</th>
+                <th>Tipo de Atividade</th>
+                <th>Solicitante</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody id="atividades-list">
+            <!-- Aqui serão inseridas as atividades -->
+        </tbody>
+    </table>
+
+    <div class="footer">
+        <div id="message" class="message"></div>
+    </div>
+
+    <div class="btns-container">
+        <a href="{{ url_for('exportar_excel') }}" class="btn-exportar">Exportar para Excel</a>
+        
+        <button id="enviar-email-btn">Enviar E-mail</button>
+
+        <button id="limpar-tabela">Limpar Tabela</button>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    
+</body>
+</html>

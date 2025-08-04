@@ -1,0 +1,174 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif; /* Use a fonte Arial ou uma fonte sans-serif genérica */
+    font-size: 14px; /* Define o tamanho base do texto */
+}
+
+/* Estilos para o formulário */
+#atividade-form {
+    width: 100%;
+}
+
+/* Estilos para as linhas do formulário */
+.form-row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos flexíveis sejam quebrados em várias linhas */
+    margin-bottom: 20px; /* Aumentei a margem inferior para adicionar mais espaço entre as linhas */
+}
+
+/* Estilos para os grupos de campos */
+.form-group {
+    flex: 1;
+    margin-right: 20px; /* Aumentei a margem direita para adicionar mais espaço entre os campos */
+}
+
+/* Estilos para a descrição */
+.descricao {
+    flex-basis: 100%; /* Para ocupar toda a largura */
+}
+
+/* Estilos para os labels */
+.form-group label {
+    margin-right: 10px;
+    font-weight: bold; /* Deixa o texto do label em negrito */
+}
+
+/* Estilos para os inputs e textarea */
+.form-group input, .form-group textarea {
+    width: 100%; /* Define a largura dos inputs e textarea como 100% */
+    padding: 5px; /* Adiciona um preenchimento interno aos inputs e textarea */
+    font-size: 14px; /* Define o tamanho do texto dos inputs e textarea */
+}
+
+/* Estilos para os botões */
+#atividade-form button {
+    margin-top: 10px;
+    padding: 10px 20px; /* Adiciona um preenchimento interno ao botão */
+    font-size: 14px; /* Define o tamanho do texto do botão */
+}
+
+/* Estilos para a tabela de atividades */
+#atividades-table {
+    border-collapse: separate; /* Separar as bordas das células */
+    border-spacing: 0; /* Definir o espaçamento entre as células como 0 */
+    width: 100%;
+}
+
+#atividades-table th, #atividades-table td {
+    border: 1px solid #dddddd; /* Adiciona borda a todas as células */
+    padding: 8px; /* Adiciona preenchimento interno */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+#atividades-table th {
+    background-color: #007bff; /* Define a cor de fundo como azul */
+    color: #ffffff; /* Define a cor do texto como branco */
+    
+}
+
+#atividades-table td {
+    border-top: none; /* Remove a borda superior das células */
+    border-radius: 0; /* Remove as bordas arredondadas das células */
+}
+
+#atividades-table th:first-child, #atividades-table td:first-child {
+    border-left: none; /* Remove a borda esquerda das células */
+}
+
+#atividades-table th:last-child, #atividades-table td:last-child {
+    border-right: none; /* Remove a borda direita das células */
+}
+
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-width: 0px;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos gerais */
+.btn-exportar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-exportar:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos gerais */
+.btn-enviar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background-color: #0056b3;
+}
+
+
+#limpar-tabela {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#limpar-tabela:hover {
+    background-color: #c82333;
+}
+
+.btns-container {
+    margin-top: 20px; /* Adiciona um espaçamento entre os botões e a tabela */
+    text-align: right; /* Alinha os botões à direita */
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos da mensagem */
+.message {
+    background-color: #ffffff;
+    color: #4b4b4b;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
