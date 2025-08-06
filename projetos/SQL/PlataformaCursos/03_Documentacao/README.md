@@ -14,7 +14,8 @@ Este projeto demonstra habilidades avançadas em **SQL Server**, incluindo:
 ---
 
 ## 📂 Estrutura do Projeto
-```PlataformaCursos/
+```
+PlataformaCursos/
 │
 ├── 01_Modelagem/
 │ ├── Modelo_Logico.md # Explicação do modelo
