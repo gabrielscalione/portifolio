@@ -15,23 +15,23 @@ Este projeto demonstra habilidades avançadas em **SQL Server**, incluindo:
 
 ## 📂 Estrutura do Projeto
 ```PlataformaCursos/
-```│
-```├── 01_Modelagem/
-```│ ├── Modelo_Logico.md # Explicação do modelo
-```│
-```├── 02_Scripts/
-```│ ├── 01_CreateDatabase.sql
-```│ ├── 02_CreateTables.sql
-```│ ├── 03_Indexes.sql
-```│ ├── 04_InsertData.sql
-```│ ├── 05_Views.sql
-```│ ├── 06_Functions.sql
-```│ ├── 07_Procedures.sql
-```│ ├── 08_Triggers.sql
-```│ ├── 09_ConsultasAvancadas.sql
-```│ ├── 10_Seguranca.sql
-```│ ├── 11_BackupRestore.sql
-```│ ├── 12_Autenticacao.sql
-```│
-```├── 03_Documentacao/
-```│ ├── README.md
+│
+├── 01_Modelagem/
+│ ├── Modelo_Logico.md # Explicação do modelo
+│
+├── 02_Scripts/
+│ ├── 01_CreateDatabase.sql
+│ ├── 02_CreateTables.sql
+│ ├── 03_Indexes.sql
+│ ├── 04_InsertData.sql
+│ ├── 05_Views.sql
+│ ├── 06_Functions.sql
+│ ├── 07_Procedures.sql
+│ ├── 08_Triggers.sql
+│ ├── 09_ConsultasAvancadas.sql
+│ ├── 10_Seguranca.sql
+│ ├── 11_BackupRestore.sql
+│ ├── 12_Autenticacao.sql
+│
+├── 03_Documentacao/
+│ ├── README.md
